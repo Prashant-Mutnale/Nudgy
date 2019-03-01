@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Regular.ttf</string>
@@ -79,6 +79,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CodePushDeploymentKey</key>
-	<string>7cd73190-f794-4cf4-b148-d6ce04453858</string>
+	<string>SpKC4UyV4nImnGDtx4MVe4qyOMBI44e9e055-1531-480f-ae41-30f9bce18dd2</string>
 </dict>
 </plist>
