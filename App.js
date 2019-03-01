@@ -39,6 +39,7 @@ import Networksign from './src/components/networkfail'
 import DeviceInfo from 'react-native-device-info';
 import ShoutOutSearch from './src/components/shout/shoutOutSearch'
 import SignUp from './src/components/signUp/SignUp'
+import codePush from "react-native-code-push";
 
 import { Actions, Scene, Router, Animations, Reducer, ActionConst } from 'react-native-router-flux';
 
@@ -60,6 +61,10 @@ export default class App extends Component {
         this.handleAppStatehange = this.handleAppStatehange.bind(this)
     }
     async componentDidMount() {
+        codePush.sync({
+            updateDialog: true,
+            installMode: codePush.InstallMode.IMMEDIATE
+        });
         const systemName = DeviceInfo.getSystemName();
         console.log("systemName", systemName)
         AppState.addEventListener('change', this.handleAppStatehange);
