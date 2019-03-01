@@ -59,12 +59,12 @@ export default class App extends Component {
         this.child = React.createRef();
         // this.doWhateverAPICallsINeed = this.doWhateverAPICallsINeed.bind(this)
         this.handleAppStatehange = this.handleAppStatehange.bind(this)
-    }
-    async componentDidMount() {
         codePush.sync({
-            updateDialog: true,
+            // updateDialog: true,
             installMode: codePush.InstallMode.IMMEDIATE
         });
+    }
+    async componentDidMount() {
         const systemName = DeviceInfo.getSystemName();
         console.log("systemName", systemName)
         AppState.addEventListener('change', this.handleAppStatehange);
