@@ -16,6 +16,7 @@
     "react-native-checkbox": "^2.0.0",
     "react-native-checkbox-component": "^1.0.3",
     "react-native-checkbox-heaven": "^0.1.5",
+    "react-native-code-push": "^5.5.2",
     "react-native-connection-info": "^1.1.0",
     "react-native-device-info": "^0.22.5",
     "react-native-fcm": "^16.2.3",
