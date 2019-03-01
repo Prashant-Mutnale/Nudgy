@@ -224,9 +224,9 @@ class SignIn extends React.Component {
                         // baseColor = {'red'}
                         onChangeText={(password) => this.callpassword(password)}
                     />
-                    <View style={styles.forgotcontent}>
+                    {/* <View style={styles.forgotcontent}>
                         <TouchableOpacity activeOpacity={1} onPressIn={() => this.forgotpassword()}><Text style={styles.forgotText}>Forgot Password ?</Text></TouchableOpacity>
-                    </View>
+                    </View> */}
 
                     <TouchableOpacity disabled={this.state.username && this.state.password !== "" ? false : true} onPressIn={() => this.login()} onSubmitEditing={() => this.login()} style={this.state.username && this.state.password !== "" ? [ButtonComman.button, styles.mgtop20] : [ButtonComman.DisabledButton, styles.mgtop20]}><Text style={ButtonComman.buttonText}>LOG IN</Text></TouchableOpacity>
                     {/* <TouchableOpacity style={[ButtonComman.button, styles.mgtop20]} onPressIn={() => Actions.signup()}><Text style={ButtonComman.buttonText}>SIGN UP</Text></TouchableOpacity> */}
